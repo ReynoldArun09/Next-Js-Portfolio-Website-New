@@ -1,0 +1,18 @@
+export const skills: string[] = [
+  "HTML",
+  "CSS",
+  "SCSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Tailwind CSS",
+  "MongoDB",
+  "Node.js",
+  "Express.js",
+  "Docker",
+  "Redis",
+  "TanStack Query",
+  "ShadCN UI",
+  "Firebase",
+];
