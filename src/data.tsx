@@ -17,6 +17,25 @@ export const skills: string[] = [
   "Firebase",
 ];
 
+interface Experience {
+  title: string;
+  company: string;
+  date: string;
+}
+
+export const experiences: Experience[] = [
+  {
+    title: "MERN Stack Developer",
+    company: "Self-Employed",
+    date: "2022 - Present",
+  },
+  {
+    title: "MERN Stack Developer",
+    company: "Self-Employed",
+    date: "2022 - Present",
+  },
+];
+
 interface Project {
   name: string;
   description: string[];
