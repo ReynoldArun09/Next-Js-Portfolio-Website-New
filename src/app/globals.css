@@ -75,4 +75,31 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  section {
+    position: relative;
+    margin: 1rem 0;
+    padding: 2rem 0;
+  }
+
+  section::before {
+    content: var(--content-before);
+    opacity: 0.3;
+    position: absolute;
+    left: -4rem;
+    top: -3px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--muted-foreground-color);
+  }
+
+  section::after {
+    content: var(--content-after);
+    opacity: 0.3;
+    position: absolute;
+    right: -4rem;
+    bottom: -10px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--muted-foreground-color);
+  }
 }

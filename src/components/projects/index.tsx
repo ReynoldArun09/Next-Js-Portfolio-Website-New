@@ -9,13 +9,17 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative my-16 py-3 before:content-['<Projects>'] before:opacity-30 after:opacity-30 before:absolute before:-left-14 before:-top-3 
-    before:font-extrabold before:text-muted-foreground before:text-xl after:content-['</Projects>'] after:absolute after:right-0 after:-bottom-10 after:text-muted-foreground after:text-xl after:font-extrabold"
+      style={
+        {
+          "--content-before": '"<Projects>"',
+          "--content-after": '"</Projects>"',
+        } as React.CSSProperties
+      }
     >
       <div>
         {projects.map((project, index) => (
-          <Card key={`${project}-${index}`} className="flex my-5">
-            <div className="group relative h-80 my-auto w-full overflow-hidden">
+          <Card key={`${project}-${index}`} className="flex my-6 gap-8">
+            <div className="group relative h-80 my-auto overflow-hidden w-1/2">
               <Image
                 src={project.image}
                 alt={project.name}
@@ -24,9 +28,11 @@ export default function Projects() {
                 className="object-cover ml-2 transition-transform duration-500 group-hover:-translate-y-[65%]"
               />
             </div>
-            <div className="space-y-3 py-3">
-              <h3 className="font-bold text-2xl">{project.name}</h3>
-              <ul>
+            <div className="space-y-3 py-3 w-1/2 mr-4">
+              <h3 className="font-bold text-2xl tracking-wider">
+                {project.name}
+              </h3>
+              <ul className="space-y-2">
                 {project.description.map((description, index) => (
                   <li key={`${description}-${index}`}>
                     <span className="mr-2 mt-1.5 text-sky-500">•</span>
@@ -46,7 +52,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
-                  <FaGithub size={25} />
+                  <FaGithub size={24} />
                   <span>View Code</span>
                   <span className="sr-only">github link</span>
                 </Link>
@@ -56,7 +62,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
-                  <FaExternalLinkAlt size={25} />
+                  <FaExternalLinkAlt size={24} />
                   <span>View Demo</span>
                   <span className="sr-only">live site</span>
                 </Link>

@@ -1,27 +1,68 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
 import { Button } from "../ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
+import { Carouselskills } from "@/data";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="relative my-16 py-3 before:content-['<About>'] before:opacity-30 after:opacity-30 before:absolute before:-left-14 before:-top-3 
-before:font-extrabold before:text-muted-foreground before:text-xl after:content-['</About>'] after:absolute after:right-0 after:-bottom-10 after:text-muted-foreground after:text-xl after:font-extrabold"
+      style={
+        {
+          "--content-before": '"<About>"',
+          "--content-after": '"</About>"',
+        } as React.CSSProperties
+      }
     >
-      <div className="space-y-1 py-6">
-        <h1 className="text-2xl font-bold">Reynold Sequeria</h1>
-        <h2>Mern Stack Developer</h2>
-        <h3 className="flex items-center gap-2">
-          <FaLocationDot /> <span>Mangalore, India</span>
-        </h3>
-      </div>
-      <div className="flex items-center gap-3">
-        <Button>Download CV</Button>
-        <div className="flex items-center gap-3">
-          <FaGithub size={24} />
-          <FaXTwitter size={24} />
-          <FaLinkedin size={24} />
+      <div className="flex justify-between items-center py-12">
+        <div className="space-y-5">
+          <div className="space-y-1">
+            <h1 className="font-bold text-2xl tracking-wider">
+              Reynold Sequeria
+            </h1>
+            <h2 className="font-bold text-gray-700 tracking-wide">
+              MERN Stack Developer
+            </h2>
+            <p className="flex gap-3 items-center font-medium">
+              <FaLocationDot /> Mangalore, India
+              <span className="sr-only">location</span>
+            </p>
+          </div>
+          <div className="flex gap-5 items-center">
+            <Button>Download CV</Button>
+            <FaGithub size={24} />
+            <FaXTwitter size={24} />
+            <FaLinkedin size={24} />
+          </div>
+        </div>
+        <div>
+          <Carousel
+            className="w-[200px]"
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              {Carouselskills.map((skill) => (
+                <CarouselItem key={skill.title}>
+                  <div className="flex flex-col items-center gap-4">
+                    {skill.icon}
+                    {skill.title}
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
     </section>
