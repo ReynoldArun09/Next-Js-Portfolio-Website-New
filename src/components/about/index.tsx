@@ -23,11 +23,11 @@ export default function About() {
     >
       <div className="flex justify-between items-center py-12">
         <div className="space-y-5">
-          <div className="space-y-1">
-            <h1 className="font-bold text-2xl tracking-wider">
+          <div className="space-y-2">
+            <h1 className="font-bold text-3xl tracking-wider">
               Reynold Sequeria
             </h1>
-            <h2 className="font-bold text-gray-700 tracking-wide">
+            <h2 className="font-bold text-md text-gray-400 tracking-wider">
               MERN Stack Developer
             </h2>
             <p className="flex gap-3 items-center font-medium">

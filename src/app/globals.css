@@ -88,8 +88,9 @@ body {
     left: -4rem;
     top: -3px;
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--muted-foreground-color);
+    letter-spacing: 1px;
   }
 
   section::after {
@@ -99,7 +100,8 @@ body {
     right: -4rem;
     bottom: -10px;
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--muted-foreground-color);
+    letter-spacing: 1px;
   }
 }

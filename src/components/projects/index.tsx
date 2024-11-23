@@ -28,7 +28,7 @@ export default function Projects() {
                 className="object-cover ml-2 transition-transform duration-500 group-hover:-translate-y-[65%]"
               />
             </div>
-            <div className="space-y-3 py-3 w-1/2 mr-4">
+            <div className="space-y-3 py-6 w-1/2 mr-4">
               <h3 className="font-bold text-2xl tracking-wider">
                 {project.name}
               </h3>
