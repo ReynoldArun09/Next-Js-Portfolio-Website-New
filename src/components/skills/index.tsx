@@ -27,7 +27,7 @@ export default function Skills() {
                       ? "bg-blue-500"
                       : skill.title === "Databases"
                       ? "bg-green-500"
-                      : "bg-violet-500"
+                      : "bg-yellow-500"
                   }
                 >
                   {item}

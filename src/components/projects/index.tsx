@@ -2,7 +2,7 @@ import { projects } from "@/data";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
 import Link from "next/link";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import { Card } from "../ui/card";
 
 export default function Projects() {
@@ -33,8 +33,8 @@ export default function Projects() {
                 {project.name}
               </h3>
               <p>{project.description}</p>
+              <h4 className="font-bold">Key Features: </h4>
               <ul className="space-y-2">
-                <h4 className="font-bold">Key Features: </h4>
                 {project.features.map((feature, index) => (
                   <li key={`${feature}-${index}`}>
                     <span className="mr-2 mt-1.5 text-sky-500">•</span>
@@ -64,7 +64,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
-                  <FaExternalLinkAlt size={24} />
+                  <FaGlobe size={24} />
                   <span>View Demo</span>
                   <span className="sr-only">live site</span>
                 </Link>

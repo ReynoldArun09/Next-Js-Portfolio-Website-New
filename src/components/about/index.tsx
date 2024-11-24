@@ -38,6 +38,7 @@ export default function About() {
                 className="hover:scale-105"
               >
                 {link.icon}
+                <span className="sr-only">{link.name}</span>
               </Link>
             ))}
           </div>
