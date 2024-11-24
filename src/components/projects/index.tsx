@@ -32,11 +32,13 @@ export default function Projects() {
               <h3 className="font-bold text-2xl tracking-wider">
                 {project.name}
               </h3>
+              <p>{project.description}</p>
               <ul className="space-y-2">
-                {project.description.map((description, index) => (
-                  <li key={`${description}-${index}`}>
+                <h4 className="font-bold">Key Features: </h4>
+                {project.features.map((feature, index) => (
+                  <li key={`${feature}-${index}`}>
                     <span className="mr-2 mt-1.5 text-sky-500">•</span>
-                    <span>{description}</span>
+                    <span>{feature}</span>
                   </li>
                 ))}
               </ul>

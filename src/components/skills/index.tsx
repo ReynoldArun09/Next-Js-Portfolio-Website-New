@@ -12,14 +12,29 @@ export default function Skills() {
         } as React.CSSProperties
       }
     >
-      <div className="flex gap-x-2 gap-y-3 py-6 flex-wrap">
-        {skills.map((skill, index) => (
-          <Badge
-            key={`${skill}-${index}`}
-            className="hover:scale-110 cursor-pointer tracking-wide"
-          >
-            {skill}
-          </Badge>
+      <div className="flex flex-col gap-4 py-10">
+        {skills.map((skill) => (
+          <div key={skill.title} className="space-y-2">
+            <h3 className="font-bold tracking-wider">{skill.title}</h3>
+            <div className="space-x-2">
+              {skill.list.map((item, index) => (
+                <Badge
+                  key={`${item}-${index}`}
+                  className={
+                    skill.title === "Frontend"
+                      ? "bg-rose-500"
+                      : skill.title === "Backend"
+                      ? "bg-blue-500"
+                      : skill.title === "Databases"
+                      ? "bg-green-500"
+                      : "bg-violet-500"
+                  }
+                >
+                  {item}
+                </Badge>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </section>

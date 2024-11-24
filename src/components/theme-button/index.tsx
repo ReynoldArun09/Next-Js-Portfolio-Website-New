@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 export default function ThemeButton() {
   const { theme, setTheme } = useTheme();
   return (
-    <section className="absolute top-0 -right-10">
+    <section className="absolute top-0 -right-14">
       {theme === "dark" ? (
         <Button
           variant="link"

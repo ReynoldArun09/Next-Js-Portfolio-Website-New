@@ -1,14 +1,9 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 import { Button } from "../ui/button";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../ui/carousel";
-import { Carouselskills } from "@/data";
+import React from "react";
+import AboutCarousel from "./about-carousel";
+import { SocialLinks } from "@/data";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -21,49 +16,33 @@ export default function About() {
         } as React.CSSProperties
       }
     >
-      <div className="flex justify-between items-center py-12">
-        <div className="space-y-5">
+      <div className="flex justify-between items-center tracking-wider font-bold py-10">
+        <div className="space-y-4">
           <div className="space-y-2">
-            <h1 className="font-bold text-3xl tracking-wider">
-              Reynold Sequeria
-            </h1>
-            <h2 className="font-bold text-md text-gray-400 tracking-wider">
-              MERN Stack Developer
-            </h2>
-            <p className="flex gap-3 items-center font-medium">
-              <FaLocationDot /> Mangalore, India
+            <h1 className="font-extrabold text-3xl">Reynold Sequeira</h1>
+            <h2 className="text-muted-foreground">MERN Stack Developer</h2>
+          </div>
+          <div>
+            <p className="flex items-center gap-2.5">
+              <FaLocationDot size={24} />
+              <span>Mangalore, India</span>
               <span className="sr-only">location</span>
             </p>
           </div>
           <div className="flex gap-5 items-center">
             <Button>Download CV</Button>
-            <FaGithub size={24} />
-            <FaXTwitter size={24} />
-            <FaLinkedin size={24} />
+            {SocialLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.link}
+                className="hover:scale-105"
+              >
+                {link.icon}
+              </Link>
+            ))}
           </div>
         </div>
-        <div>
-          <Carousel
-            className="w-[200px]"
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-          >
-            <CarouselContent>
-              {Carouselskills.map((skill) => (
-                <CarouselItem key={skill.title}>
-                  <div className="flex flex-col items-center gap-4">
-                    {skill.icon}
-                    {skill.title}
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
+        <AboutCarousel />
       </div>
     </section>
   );
