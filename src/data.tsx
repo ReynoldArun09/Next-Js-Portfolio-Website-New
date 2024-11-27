@@ -18,7 +18,7 @@ export const SocialLinks: SocialLinksProps[] = [
   {
     name: "Linkedin",
     icon: <FaLinkedin size={24} />,
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/in/reynold-arun/",
   },
 ];
 

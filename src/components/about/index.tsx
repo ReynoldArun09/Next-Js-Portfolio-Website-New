@@ -31,11 +31,16 @@ export default function About() {
             </p>
           </div>
           <div className="flex gap-5 items-center">
-            <Button>Download CV</Button>
+            <a href="/ReynoldsequeiraResume.pdf" download>
+              <Button>Download Resume</Button>
+            </a>
+
             {SocialLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:scale-105"
               >
                 {link.icon}
