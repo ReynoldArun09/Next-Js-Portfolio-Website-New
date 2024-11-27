@@ -18,8 +18,11 @@ export default function Projects() {
     >
       <div>
         {projects.map((project, index) => (
-          <Card key={`${project}-${index}`} className="flex my-6 gap-8">
-            <div className="group relative h-80 my-auto overflow-hidden w-1/2">
+          <Card
+            key={`${project}-${index}`}
+            className="flex justify-center mx-2 items-center my-6 gap-8 md:mx-0"
+          >
+            <div className="group relative h-80 my-auto overflow-hidden w-1/2 hidden md:block">
               <Image
                 src={project.image}
                 alt={project.name}

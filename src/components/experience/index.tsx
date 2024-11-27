@@ -14,7 +14,7 @@ export default function Experience() {
       {experiences.map((experience, index) => (
         <div
           key={`${experience}-${index}`}
-          className="py-12 flex items-center justify-between"
+          className="py-12 flex flex-col mx-4 justify-between md:flex-row md:items-center"
         >
           <div className="space-y-1">
             <h3 className="font-bold text-xl">{experience.company}</h3>

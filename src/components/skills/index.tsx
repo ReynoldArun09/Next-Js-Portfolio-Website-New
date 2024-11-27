@@ -12,11 +12,11 @@ export default function Skills() {
         } as React.CSSProperties
       }
     >
-      <div className="flex flex-col gap-4 py-10">
+      <div className="flex flex-col mx-4 gap-4 py-10 md:mx-0">
         {skills.map((skill) => (
           <div key={skill.title} className="space-y-2">
             <h3 className="font-bold tracking-wider">{skill.title}</h3>
-            <div className="space-x-2">
+            <div className="flex gap-2 items-center flex-wrap">
               {skill.list.map((item, index) => (
                 <Badge
                   key={`${item}-${index}`}

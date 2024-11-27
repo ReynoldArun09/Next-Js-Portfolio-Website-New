@@ -16,7 +16,10 @@ export default function About() {
         } as React.CSSProperties
       }
     >
-      <div className="flex justify-between items-center tracking-wider font-bold py-10">
+      <div
+        className="flex flex-col mx-2 gap-y-10 justify-between items-center tracking-wider font-bold py-10
+      md:flex-row md:gap-y-0 md:mx-auto"
+      >
         <div className="space-y-4">
           <div className="space-y-2">
             <h1 className="font-extrabold text-3xl">Reynold Sequeira</h1>
