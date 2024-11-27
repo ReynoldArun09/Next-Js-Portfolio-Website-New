@@ -21,6 +21,7 @@ export default function About() {
           <div className="space-y-2">
             <h1 className="font-extrabold text-3xl">Reynold Sequeira</h1>
             <h2 className="text-muted-foreground">MERN Stack Developer</h2>
+            <h3 className="font-bold">Bachelor of commerce (B.com)</h3>
           </div>
           <div>
             <p className="flex items-center gap-2.5">
