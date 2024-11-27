@@ -31,7 +31,7 @@ export default function About() {
             </p>
           </div>
           <div className="flex gap-5 items-center">
-            <a href="/ReynoldsequeiraResume.pdf" download>
+            <a href="/ReynoldResume.pdf" download>
               <Button>Download Resume</Button>
             </a>
 
