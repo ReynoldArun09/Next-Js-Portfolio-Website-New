@@ -1,9 +1,9 @@
+import ScrollToTop from "@/components/common/scroll-to-top";
+import ThemeButton from "@/components/theme-button";
+import ThemeProvider from "@/providers/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ThemeProvider from "@/providers/theme-provider";
-import ThemeButton from "@/components/theme-button";
-import ScrollToTop from "@/components/common/scroll-to-top";
 
 const inter = Inter({ subsets: ["latin"] });
 

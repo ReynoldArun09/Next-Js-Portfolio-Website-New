@@ -1,7 +1,7 @@
+import { DiMongodb, DiReact } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { DiReact, DiMongodb } from "react-icons/di";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
 
 interface SocialLinksProps {
   name: string;
@@ -30,15 +30,7 @@ interface SkillsProps {
 export const skills: SkillsProps[] = [
   {
     title: "Frontend",
-    list: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-    ],
+    list: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
   },
   {
     title: "Backend",
@@ -101,15 +93,7 @@ export const projects: Project[] = [
     image: "/mangaswipe.png",
     github: "https://github.com/ReynoldArun09/MERN-Mangaswipe",
     live: "https://mangaswipe.netlify.app/",
-    technologies: [
-      "React",
-      "Tailwind css",
-      "MongoDB",
-      "JavaScript",
-      "Node",
-      "Express",
-      "Tanstack Query",
-    ],
+    technologies: ["React", "Tailwind css", "MongoDB", "JavaScript", "Node", "Express", "Tanstack Query"],
     description:
       "MangaSwipe is a website dedicated to providing manga/manhwa enthusiasts with an immersive and convenient reading experience",
     features: [
@@ -145,8 +129,7 @@ export const projects: Project[] = [
       "Featured products, categories, and shopping cart",
       "Testing with Jest",
     ],
-    description:
-      "A user-friendly ecommerce platform built with the mern stack.",
+    description: "A user-friendly ecommerce platform built with the mern stack.",
   },
   {
     name: "Hotel Booking",
@@ -173,8 +156,7 @@ export const projects: Project[] = [
       "Responsive Design for mobile, tablet, and desktop",
       "End-to-end testing with Playwright",
     ],
-    description:
-      "A user-friendly hotel booking platform built with the MERN stack.",
+    description: "A user-friendly hotel booking platform built with the MERN stack.",
   },
   {
     name: "FoodZone",
@@ -200,8 +182,7 @@ export const projects: Project[] = [
       "Product list, Category list, and manage cart",
       "Payment Integration with Stripe",
     ],
-    description:
-      "A seamless and intuitive food delivery platform built with the mern stack with dashboard for admin",
+    description: "A seamless and intuitive food delivery platform built with the mern stack with dashboard for admin",
   },
   {
     name: "Blogging App",
@@ -227,5 +208,34 @@ export const projects: Project[] = [
       "Update Profile picture",
     ],
     description: "Basic Blog App built with mern stack",
+  },
+  {
+    name: "Job Portal App",
+    image: "/jobportal.png",
+    github: "https://github.com/ReynoldArun09/MERN-Job-Portal-Application",
+    live: "https://job-portal-mern-stack.netlify.app/",
+    technologies: [
+      "React",
+      "Tailwind css",
+      "MongoDB",
+      "Node",
+      "Typescript",
+      "Express",
+      "Tanstack Query",
+      "Shadcn UI",
+      "Cloudinary",
+      "Zod",
+      "Jest",
+      "swagger-ui",
+    ],
+    features: [
+      "Authentication and Authorization",
+      "Search jobs",
+      "Create job, apply job, create company, update company, view applicants",
+      "Responsive Design",
+      "Dark mode",
+      "recruiter dashboard",
+    ],
+    description: "job Portal App built with mern stack and typescript",
   },
 ];
