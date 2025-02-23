@@ -68,12 +68,7 @@ export const experiences: Experience[] = [
   {
     title: "MERN Stack Developer",
     company: "Zephyr Technologies & Solutions",
-    date: "2022 - 2024",
-  },
-  {
-    title: "Web Developer (internship)",
-    company: "Nimbus Tech Pvt Ltd",
-    date: "2021 - 2021",
+    date: "2023 - 2024",
   },
 ];
 
