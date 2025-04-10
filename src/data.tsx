@@ -1,7 +1,8 @@
-import { DiMongodb, DiReact } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
+import { DiMongodb, DiReact, DiRedis } from "react-icons/di";
+import { FaDocker, FaNodeJs } from "react-icons/fa";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
 
 interface SocialLinksProps {
   name: string;
@@ -38,11 +39,11 @@ export const skills: SkillsProps[] = [
   },
   {
     title: "Databases",
-    list: ["MongoDB", "Firebase"],
+    list: ["MongoDB", "Firebase", "Postgres", "Redis"],
   },
   {
     title: "Tools",
-    list: ["Docker", "Git", "Github", "VS Code"],
+    list: ["Docker", "Git", "Github", "VS Code", "Postman", "Prisma"],
   },
 ];
 
@@ -56,6 +57,9 @@ export const Carouselskills: Carouselskill[] = [
   { title: "Express", icon: <SiExpress size={60} /> },
   { title: "React", icon: <DiReact size={60} /> },
   { title: "Node", icon: <FaNodeJs size={60} /> },
+  { title: "Javascript", icon: <TbBrandJavascript size={60} /> },
+  { title: "Docker", icon: <FaDocker size={60} /> },
+  { title: "Redis", icon: <DiRedis size={60} /> },
 ];
 
 interface Experience {
@@ -232,5 +236,14 @@ export const projects: Project[] = [
       "recruiter dashboard",
     ],
     description: "job Portal App built with mern stack and typescript",
+  },
+  {
+    name: "Visual Studio Code UI Clone",
+    image: "/vs-code-ui.png",
+    github: "https://github.com/ReynoldArun09/Next-Js-Visual-studio-ui-clone",
+    live: "https://visual-studio-ui-clone.netlify.app/",
+    technologies: ["Next Js", "Tailwind css", "Typescript", "Shadcn UI", "Zustand", "React icons"],
+    features: ["Resizable Panels, dropdowns", "State Management with zustand"],
+    description: "Visual studio code clone build with next-js, tailwind, shadcn",
   },
 ];
