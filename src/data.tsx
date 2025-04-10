@@ -246,4 +246,20 @@ export const projects: Project[] = [
     features: ["Resizable Panels, dropdowns", "State Management with zustand"],
     description: "Visual studio code clone build with next-js, tailwind, shadcn",
   },
+  {
+    name: "Movie App (NETFLIX clone)",
+    image: "/netflex.png",
+    github: "https://github.com/ReynoldArun09/React-Firebase-Movie-app",
+    live: "https://incomparable-quokka-b46fcb.netlify.app/shows",
+    technologies: ["React", "Tailwind css", "Chakra ui", "Firebase Authentication", "TMDB API", "Axios", "Vite"],
+    features: [
+      "Firebase Authentication and Authorization",
+      "Search Movies",
+      "Responsive Design",
+      "Dark mode",
+      "Toggle Popular/Top Rated",
+      "Pagination",
+    ],
+    description: "Movie App (netflix clone) built with react, firebase and TMDB Api",
+  },
 ];
