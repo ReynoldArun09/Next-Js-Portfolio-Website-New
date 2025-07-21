@@ -88,21 +88,6 @@ interface Project {
 
 export const projects: Project[] = [
   {
-    name: "MangaSwipe",
-    image: "/mangaswipe.png",
-    github: "https://github.com/ReynoldArun09/MERN-Mangaswipe",
-    live: "https://mangaswipe.netlify.app/",
-    technologies: ["React", "Tailwind css", "MongoDB", "JavaScript", "Node", "Express", "Tanstack Query"],
-    description:
-      "MangaSwipe is a website dedicated to providing manga/manhwa enthusiasts with an immersive and convenient reading experience",
-    features: [
-      "Responsive Design for mobile, tablet, and desktop",
-      "Browse through a vast collection of manga titles and read them online",
-      "Easily find your favorite manga titles using the search functionality",
-      "Toggle between light and dark mode",
-    ],
-  },
-  {
     name: "One-Stop Ecommerce",
     image: "/ecommerce.png",
     github: "https://github.com/ReynoldArun09/MERN-Ecommerce-Store",
@@ -158,10 +143,10 @@ export const projects: Project[] = [
     description: "A user-friendly hotel booking platform built with the MERN stack.",
   },
   {
-    name: "FoodZone",
-    image: "/foodapp.png",
-    github: "https://github.com/ReynoldArun09/MERN-Food-Delivery-App",
-    live: "https://foodzonenewapp.netlify.app/",
+    name: "QuickBite",
+    image: "/quickbite.png",
+    github: "https://github.com/ReynoldArun09/mern-quickbite",
+    live: "https://quickbite-mern-stack.netlify.app/",
     technologies: [
       "React",
       "Tailwind css",
@@ -173,6 +158,8 @@ export const projects: Project[] = [
       "Shadcn UI",
       "Stripe",
       "Cloudinary",
+      "Vitest",
+      "Mock Service Worker",
     ],
     features: [
       "Authentication and Authorization",
@@ -261,5 +248,20 @@ export const projects: Project[] = [
       "Pagination",
     ],
     description: "Movie App (netflix clone) built with react, firebase and TMDB Api",
+  },
+  {
+    name: "MangaSwipe",
+    image: "/mangaswipe.png",
+    github: "https://github.com/ReynoldArun09/MERN-Mangaswipe",
+    live: "https://mangaswipe.netlify.app/",
+    technologies: ["React", "Tailwind css", "MongoDB", "JavaScript", "Node", "Express", "Tanstack Query"],
+    description:
+      "MangaSwipe is a website dedicated to providing manga/manhwa enthusiasts with an immersive and convenient reading experience",
+    features: [
+      "Responsive Design for mobile, tablet, and desktop",
+      "Browse through a vast collection of manga titles and read them online",
+      "Easily find your favorite manga titles using the search functionality",
+      "Toggle between light and dark mode",
+    ],
   },
 ];
